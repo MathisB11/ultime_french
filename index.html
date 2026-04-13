@@ -1,1 +1,94 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultime_french</title>
+    <link rel="icon" type="image/x-icon" href="../logo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .app-card { min-width: 160px; max-width: 160px; transition: all 0.2s; }
+        .app-card:active { transform: scale(0.95); }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-800 p-4 border-b border-gray-700 sticky top-0 z-50 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center px-2">
+            <div class="flex items-center space-x-2">
+                <img src="../logo.png" alt="Logo" class="w-8 h-8 object-contain">
+                <h1 class="text-xl font-black tracking-tighter text-white">
+                    ULTIME_FRENCH
+                </h1>
+            </div>
+            <button class="text-white p-2">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="py-8 text-center">
+        <h2 class="text-3xl font-extrabold mb-1 text-white">Ultime_french</h2>
+        <p class="text-gray-500 text-xs uppercase font-bold tracking-widest">Plateforme officielle</p>
+    </header>
+
+    <!-- ACTU -->
+    <section class="container mx-auto py-4">
+        <div class="flex items-center mb-6 px-6">
+            <div class="h-6 w-1 bg-blue-500 rounded-full mr-3"></div>
+            <h2 class="text-lg font-bold uppercase tracking-tight">Actu</h2>
+        </div>
+
+        <div class="flex overflow-x-auto gap-4 px-6 pb-6 hide-scrollbar">
+
+            <!-- ANNONCES -->
+            <div class="app-card bg-gray-800 rounded-3xl p-4 border border-gray-700 flex flex-col items-center text-center">
+                <div class="relative">
+                    <img src="../assets/icons/annonces.png" class="w-16 h-16 rounded-2xl mb-3 shadow-lg object-contain bg-white p-1">
+                    <span class="absolute -top-2 -right-2 bg-red-600 text-[8px] font-bold px-2 py-1 rounded-full">#1</span>
+                </div>
+                <h3 class="text-sm font-bold truncate w-full">Annonces</h3>
+                <p class="text-red-500 text-[10px] font-bold mb-4 uppercase">Infos</p>
+                <a href="/annonces" class="w-full bg-blue-600 text-white py-2 rounded-xl text-xs font-bold text-center">Voir</a>
+            </div>
+
+            <!-- INFOS -->
+            <div class="app-card bg-gray-800 rounded-3xl p-4 border border-gray-700 flex flex-col items-center text-center">
+                <img src="../assets/icons/infos.png" class="w-16 h-16 rounded-2xl mb-3 shadow-lg">
+                <h3 class="text-sm font-bold truncate w-full">Infos</h3>
+                <p class="text-blue-400 text-[10px] font-bold mb-4 uppercase">Plateforme</p>
+                <a href="/infos" class="w-full bg-blue-600 text-white py-2 rounded-xl text-xs font-bold text-center">Voir</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RÉSEAUX -->
+    <section class="container mx-auto py-4">
+        <div class="flex items-center mb-6 px-6">
+            <div class="h-6 w-1 bg-yellow-500 rounded-full mr-3"></div>
+            <h2 class="text-lg font-bold uppercase tracking-tight">Réseaux</h2>
+        </div>
+
+        <div class="flex overflow-x-auto gap-4 px-6 pb-6 hide-scrollbar">
+
+            <!-- DISCORD -->
+            <div class="app-card bg-gray-800 rounded-3xl p-4 border border-gray-700 flex flex-col items-center text-center">
+                <img src="../assets/icons/discord.png" class="w-16 h-16 rounded-2xl mb-3 shadow-lg border-2 border-yellow-500/50">
+                <h3 class="text-sm font-bold truncate w-full">Discord</h3>
+                <p class="text-yellow-500 text-[10px] font-bold mb-4 uppercase">Communauté</p>
+                <a href="/discord" class="w-full bg-indigo-600 text-white py-2 rounded-xl text-xs font-bold text-center">Rejoindre</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
